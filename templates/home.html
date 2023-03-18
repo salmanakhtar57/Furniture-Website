@@ -29,7 +29,8 @@
             everything you need to create the perfect home.
           </p>
         </div class="d-none d-md-block col-md-6">
-        <img src=" static/wallpaper.png" style="height: 320px; width: 520px; border-radius: 4px;">
+        <img src=" static/wallpaper.png" style="height: 320px; width: 520px; border-radius:
+          4px;">
       </div>
 
       <div style="text-align: center;">
@@ -37,16 +38,16 @@
         </button>
   
         <h2>Our Products</h2>
-      </div>
-    
-        
+      </div>        
 
         {% for product in products %}
          {% include 'items.html' %}
         {% endfor %}
+
+    
   </div>
   
-  {% include 'footer.html' %}
+{% include 'footer.html' %}
     
 </body>
 </html>
