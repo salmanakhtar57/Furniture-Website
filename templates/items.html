@@ -1,0 +1,33 @@
+ <div class="border-bottom row" style="margin-bottom: 16px; padding-bottom: 12px">
+   
+   <div class="col-9">
+
+     <!--      Listing items -->
+     <h4 style="color: gray;">
+       {{product['item']}}
+     </h4>
+     
+     <div>
+       <b>Category:</b> {{product['category']}}
+     </div>
+
+     <!--      If the color property is not included -->
+     {% if 'color' in product %}
+     <div>
+       <b>Color:</b> {{product['color']}}
+     </div>
+     {% endif %}
+
+     <!--      Price category -->
+     <div>
+       <b>Price:</b> {{product['price']}}
+     </div>
+   
+   </div>
+
+   <!--    Button -->
+   <div class="col-3">       
+     <button type="button" class="btn btn-outline-primary">Buy Now</button>
+   </div>
+ 
+ </div>
